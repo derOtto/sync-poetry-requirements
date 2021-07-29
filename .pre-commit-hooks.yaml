@@ -1,0 +1,7 @@
+- id: "sync-poetry-requirements"
+  name: "Sync Poetry Requirements"
+  entry: poetry
+  args: [run, pipreqs, --force]
+  files: poetry.lock
+  language: "script"
+  description: "This hook syncs all requirements of a Poetry environment to a requirements.txt file."
